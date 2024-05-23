@@ -1,6 +1,6 @@
 import { forSpyOn } from "../../src/utils";
 
-describe("User", () => {
+describe("Utils", () => {
   beforeEach(() => {
     jest.restoreAllMocks();
   });

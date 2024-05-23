@@ -1,4 +1,5 @@
 import { getGreeting, getAddress } from "../utils";
+import { foo } from "../utils/forMockPartial";
 
 // works for both 1 and 2
 // jest.mock("../../src/utils/getGreeting");
@@ -12,5 +13,6 @@ import { getGreeting, getAddress } from "../utils";
 // import { getAddress } from "../utils/getAddress";
 
 export const User = () => {
+  foo();
   return `${getGreeting("Tsing")} Address: ${getAddress()}`;
 };
